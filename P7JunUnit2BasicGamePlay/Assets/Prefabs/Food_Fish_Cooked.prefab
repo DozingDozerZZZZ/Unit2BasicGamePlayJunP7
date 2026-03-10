@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 6870056130891001610}
   - component: {fileID: 1916432073398292321}
   - component: {fileID: 3573649895136675088}
+  - component: {fileID: 6545933440799968052}
+  - component: {fileID: 7188184743427192087}
   m_Layer: 0
   m_Name: Food_Fish_Cooked
   m_TagString: Untagged
@@ -113,3 +115,51 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b0a3130d0d4ea14b823ffbd1ac8f442, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!54 &6545933440799968052
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3947004328627012273}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &7188184743427192087
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3947004328627012273}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.26173592, y: 0.13675982, z: 0.4304055}
+  m_Center: {x: 0, y: 0.111486286, z: 0.00342983}

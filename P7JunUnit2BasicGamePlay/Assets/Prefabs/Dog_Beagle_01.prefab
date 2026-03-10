@@ -1,5 +1,53 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &195213391822826923
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7724560973689232701}
+  - component: {fileID: 6647518886499833827}
+  m_Layer: 0
+  m_Name: Spawnmanger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7724560973689232701
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 195213391822826923}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
+  m_LocalPosition: {x: -1.9291191, y: -2.8761406, z: -3.9908867}
+  m_LocalScale: {x: 0.16666667, y: 0.16666667, z: 0.16666667}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7536579931419259035}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6647518886499833827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 195213391822826923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d3c9138edcb966439fcdd722bac6ae1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animalPrefabs:
+  - {fileID: 8161651505445106307}
+  - {fileID: 4837234958334367480, guid: e943e3289e309544496260ffe5972aae, type: 3}
+  - {fileID: 7260096033690912610, guid: bfb1e70739d0546498e21e85b8c5a6ec, type: 3}
 --- !u!1 &207440115100336594
 GameObject:
   m_ObjectHideFlags: 0
@@ -5453,6 +5501,8 @@ GameObject:
   - component: {fileID: 3464961422724528869}
   - component: {fileID: -1340316095649778132}
   - component: {fileID: 1317233605268626516}
+  - component: {fileID: 3443998752091799552}
+  - component: {fileID: -1730468037690631919}
   m_Layer: 0
   m_Name: Dog_Beagle_01
   m_TagString: Untagged
@@ -5510,6 +5560,7 @@ Transform:
   - {fileID: 1331645756866687639}
   - {fileID: 5240380026015662186}
   - {fileID: 885347334261063689}
+  - {fileID: 7724560973689232701}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!95 &3464961422724528869
@@ -5546,7 +5597,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16966434c9faae04895cb93f54e6f88a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 20
+  speed: 25
 --- !u!114 &1317233605268626516
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5559,6 +5610,54 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b0a3130d0d4ea14b823ffbd1ac8f442, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!54 &3443998752091799552
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8161651505445106307}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &-1730468037690631919
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8161651505445106307}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.10000001, y: 0.21767066, z: 0.26843378}
+  m_Center: {x: 0, y: 0.09907406, z: 0.026996395}
 --- !u!1 &8174050635407488531
 GameObject:
   m_ObjectHideFlags: 0
