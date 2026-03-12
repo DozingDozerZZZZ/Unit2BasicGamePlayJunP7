@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class DetectCollisions : MonoBehaviour
 {
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -13,9 +14,17 @@ public class DetectCollisions : MonoBehaviour
     {
         
     }
-    void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
-        Destroy(gameObject);
-        Destory(other.gameObject);
+      if(other.CompareTag("Player"))
+        {
+            Debug.Log("gameoverrr");
+            Destroy(gameObject);
+        }
+      else
+        {
+            Destroy(gameObject);
+            Destroy(other.gameObject);
+        }
     }
 }
