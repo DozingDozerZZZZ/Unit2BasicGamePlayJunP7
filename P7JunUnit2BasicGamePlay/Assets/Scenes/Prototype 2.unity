@@ -596,7 +596,7 @@ MonoBehaviour:
   - {fileID: 4837234958334367480, guid: e943e3289e309544496260ffe5972aae, type: 3}
   - {fileID: 7260096033690912610, guid: bfb1e70739d0546498e21e85b8c5a6ec, type: 3}
   sideSpawnMinZ: 3
-  sideSpawnMaxZ: 25
+  sideSpawnMaxZ: 15
   sideSpawnX: 20
 --- !u!4 &833259563
 Transform:
@@ -658,6 +658,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 3bd8a450fcb589542a7843ea7bda2ee6, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 3bd8a450fcb589542a7843ea7bda2ee6, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 3bd8a450fcb589542a7843ea7bda2ee6, type: 3}
       propertyPath: m_TagString

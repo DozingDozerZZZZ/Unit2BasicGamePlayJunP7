@@ -43,7 +43,7 @@ public class PlayerController : MonoBehaviour
            Instantiate(projectilePrefab,transform.position,projectilePrefab.transform.rotation);
         }
 
-        Instantiate(projectilePrefab, projectileSpawnPoint.position,projectilePrefab.transform.rotation);
+   
 
         if (transform.position.z < zMin)
         {
